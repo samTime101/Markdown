@@ -13,13 +13,13 @@ jobs:
     - name: Create coverage directory
       run: mkdir -p coverage
 
-    - name: Converts Markdown to HTML
+    - name: Samip Regmi
       uses: jaywcjlove/markdown-to-html-cli@main
       with:
         source: README.md
         output: coverage/action.html
-        github-corners: https://github.com/jaywcjlove/markdown-to-html-cli
-        favicon: data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>
+        github-corners: https://github.com/samTime101/
+        favicon: https://media.licdn.com/dms/image/D4D03AQGG7Of9-lWWlQ/profile-displayphoto-shrink_200_200/0/1716030089681?e=2147483647&v=beta&t=8T8ApCZJnu71wgTVGYBeiQ1LEVm6BTsoJ07pTmILO6k
 
     - name: Upload HTML artifact
       uses: actions/upload-artifact@v3
