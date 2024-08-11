@@ -13,17 +13,19 @@ jobs:
     - name: Create coverage directory
       run: mkdir -p coverage
 
-    - name: Convert Markdown to HTML
+    - name: Convert README.md to HTML
       uses: jaywcjlove/markdown-to-html-cli@main
       with:
-        # Converting multiple markdown files
-        # You can list as many files as needed
-        source: |
-          README.md
-          sockets_server_1.md
-        output: |
-          coverage/README.html
-          coverage/link1.html
+        source: README.md
+        output: coverage/README.html
+        github-corners: https://github.com/samTime101/
+        favicon: https://media.licdn.com/dms/image/D4D03AQGG7Of9-lWWlQ/profile-displayphoto-shrink_200_200/0/1716030089681?e=2147483647&v=beta&t=8T8ApCZJnu71wgTVGYBeiQ1LEVm6BTsoJ07pTmILO6k
+
+    - name: Convert sockets_server_1.md to HTML
+      uses: jaywcjlove/markdown-to-html-cli@main
+      with:
+        source: sockets_server_1.md
+        output: coverage/sockets_server_1.html
         github-corners: https://github.com/samTime101/
         favicon: https://media.licdn.com/dms/image/D4D03AQGG7Of9-lWWlQ/profile-displayphoto-shrink_200_200/0/1716030089681?e=2147483647&v=beta&t=8T8ApCZJnu71wgTVGYBeiQ1LEVm6BTsoJ07pTmILO6k
 
@@ -31,6 +33,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: html-files
-        path: |
-          coverage/README.html
-          coverage/link1.html
+        path: coverage/
