@@ -22,7 +22,7 @@ Archives
 | samiptime101 | https://samiptime101.web.app |
 | google sites | https://sites.google.com/view/samipregmi |
 | 000webhost | https://samip101.000webhostapp.com/ |
-| MyreactPage -yes i know some react | [plugins/medium/README.md][PlMe] |
+| MyreactPage -yes i know some react | http://web.archive.org/web/20240000000000*/https://samip101.web.app/ |
 
 
 Socials
