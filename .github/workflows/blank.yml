@@ -29,6 +29,15 @@ jobs:
         github-corners: https://github.com/samTime101/
         favicon: https://media.licdn.com/dms/image/D4D03AQGG7Of9-lWWlQ/profile-displayphoto-shrink_200_200/0/1716030089681?e=2147483647&v=beta&t=8T8ApCZJnu71wgTVGYBeiQ1LEVm6BTsoJ07pTmILO6k
 
+    - name: Convert sockets_server_1.md to HTML
+      uses: jaywcjlove/markdown-to-html-cli@main
+      with:
+        source: TCP_server.md
+        output: coverage/TCP_server.html
+        github-corners: https://github.com/samTime101/
+        favicon: https://media.licdn.com/dms/image/D4D03AQGG7Of9-lWWlQ/profile-displayphoto-shrink_200_200/0/1716030089681?e=2147483647&v=beta&t=8T8ApCZJnu71wgTVGYBeiQ1LEVm6BTsoJ07pTmILO6k
+
+
     - name: Upload HTML artifacts
       uses: actions/upload-artifact@v3
       with:
